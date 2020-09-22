@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>xUnit - Fact</Title>
+            <Author>Jhonny</Author>
+            <Description>Creates a basic xUnit Fact test</Description>
+            <Shortcut>xfact</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[[Fact]
+        public $ReturnValue$ $selected$()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+        }]]>
+            </Code>
+             <Declarations>
+                <Literal>
+                    <ID>selected</ID>
+                    <ToolTip>Name of the test</ToolTip>
+                    <Default>FactTestName</Default>
+                </Literal>
+                <Literal>
+                    <ID>ReturnValue</ID>
+                    <ToolTip>Return type</ToolTip>
+                    <Default>void</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

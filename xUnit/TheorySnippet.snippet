@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>xUnit - Theory</Title>
+            <Author>Jhonny</Author>
+            <Description>Creates a basic xUnit Theory test</Description>
+            <Shortcut>xTheory</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[[Theory]
+        [InlineData("test")]
+        public $ReturnValue$ $selected$(string testData)
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+        }]]>
+            </Code>
+             <Declarations>
+                <Literal>
+                    <ID>selected</ID>
+                    <ToolTip>Name of the method</ToolTip>
+                    <Default>MethodName</Default>
+                </Literal>
+                <Literal>
+                    <ID>ReturnValue</ID>
+                    <ToolTip>Return type</ToolTip>
+                    <Default>void</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
